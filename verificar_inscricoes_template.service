@@ -1,0 +1,8 @@
+[Unit]
+Description=Verifica se as inscricoes estao abertas
+[Service]
+Restart=on-failure
+RestartSec=43200
+ExecStart=/usr/bin/env bash _PATH_
+[Install]
+WantedBy=default.target
