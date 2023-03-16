@@ -3,7 +3,6 @@
 # DATA='2022/2023'
 DATA='2023/2024'
 PAGINA='https://www.isec.pt/pt/estudar/formas-de-ingresso/mestrados/#MestradosPrazos'
-WAITING=1
 
 function verificar_inscricoes(){
 if curl $PAGINA | grep $DATA ;then
@@ -18,8 +17,3 @@ if curl $PAGINA | grep $DATA ;then
 }
 
 verificar_inscricoes
-
-# while [ $? -eq 1 ];do
-# echo rebooting
-# sleep 100
-# done
